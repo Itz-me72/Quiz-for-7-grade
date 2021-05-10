@@ -1,0 +1,49 @@
+print("Halo selamat datang di gama2!!")
+print("game version 2.0")
+ans = input("apakah kamu siap bermain??(iya/tidak):")
+score = 0
+total_q = 5
+
+if ans.lower () == "iya":
+	print("soal ipa")
+	ans = input("apa nama planet ke 5??")
+	if ans.lower() == "jupiter":
+		score += 1
+		print("benar!")
+	else:
+		print("salah")
+		
+	ans = input("tanaman apa yang tidak berfotosintesis")
+	if ans.lower() == "jamur":
+		score += 1
+		print("benar!")
+	else:
+		print("salah")
+		
+	ans = input("apa kependekan (gerak lurus berantai):?")
+	if ans.lower() == "glb":
+		score += 1
+		print("benar!")
+	else:
+		print("salah")
+		
+	ans = input("apa nama lapisan bumi yang ke 2 dari luar?")
+	if ans.lower() == "mantel" or ans.lower() == "mantel bumi":
+		score += 1
+		print("benar!")
+	else:
+		print("salah")
+		
+	ans = input("gas apa yang paling bahay menyebabkan global warming??")
+	if ans.lower() == "metana" or ans.lower() == "gas metana":
+		score += 1
+		print("benar!")
+	else:
+		print("salah")
+		
+	print('terima kasih sudah menyelesaikan quiz ini :) score anda,',score, "!!")
+	mark = (score/total_q) * 100
+	
+	print("mark:", str (mark) + '%')
+	
+print("sampai jumpa!!")
